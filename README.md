@@ -35,3 +35,5 @@ So if you had a keyset for Blender & wanted to see shortcuts relevant to a conte
 
 ### Done!
 Now your users don't need to waste time navigating sheets of keyboard shortcuts, it's all contextual!
+
+## Have a feature request? Open an issue!
