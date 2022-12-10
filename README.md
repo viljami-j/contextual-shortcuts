@@ -21,7 +21,7 @@ It is a file that contains all of your application's contexts, actions & keybind
             <ALT/>
             <D/>
         </Shortcut>
-		<Shortcut name="anotherCoolShortcut">
+	<Shortcut name="anotherCoolShortcut">
             <CTRL/>
             <F/>
         </Shortcut>
