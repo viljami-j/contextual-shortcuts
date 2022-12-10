@@ -31,10 +31,16 @@ It is a file that contains all of your application's contexts, actions & keybind
 
 ###  Change the context
 Write to 'cshorts.txt' from any point in your code in the following format:  
-```[YourKeySetName] [ContextYouWishToUse]```
+```
+YourKeySetName
+ContextYouWishToUse
+```
 
 So if you had a keyset for Blender & wanted to see shortcuts relevant to a context named 'Sculpting' you would write like so:  
-```BlenderKeyset.xml Sculpting```
+```
+BlenderKeyset.xml
+Sculpting
+```
 
 ### Done!
 Now your users don't need to waste time navigating sheets of keyboard shortcuts, it's all contextual!
