@@ -11,21 +11,16 @@ A simple tool that provides contextual shortcuts for any application that has de
 
 It is a file that contains all of your application's contexts, actions & keybinds for each defined action.
 
+*What is a context*?
+
+Contexts are like spaces that are meant to contain only the relevant shortcuts, 
+e.g. the user clicks some window that has it's own special shortcuts.
+
 ```xml
 <Keyset>
-<!-- Contexts are like spaces that are meant to contain only the relevant shortcuts, 
-     e.g. the user clicks some window that has it's own special shortcuts  -->
-    <Context name="someCoolContextInYourProgram"> 
-        <Shortcut name="someCoolShortcutInYourProgram"> 
-            <CTRL/>  <!-- Keybinds are written in all caps. Refer to key-examples.txt if you have trouble. -->
-            <ALT/>
-            <D/>
-        </Shortcut>
-	<Shortcut name="anotherCoolShortcut">
-            <CTRL/>
-            <F/>
-        </Shortcut>
-    </Context>
+   <!-- Keys in a keybind are separated by whitespaces. Refer to key-examples.txt for appropriate key names. -->
+    <Shortcut context="someCoolShortcutInYourProgram" keybind="CTRL ALT D"/> 
+    <Shortcut context="anotherCoolShortcut" keybind="CTRL F"/>
 </Keyset>
 ```
 
