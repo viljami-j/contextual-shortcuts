@@ -1,4 +1,4 @@
-# CShorts - Contextual Shortcuts
+# Contextual Shortcuts
 A simple tool that provides contextual shortcuts for any application that has defined a keyset.
 
 ## Why to use?
