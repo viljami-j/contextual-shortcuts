@@ -27,14 +27,12 @@ e.g. the user clicks some window that has it's own special shortcuts.
 ###  Change the context
 Write to 'cshorts.txt' from any point in your code in the following format:  
 ```
-YourKeySetName
-ContextYouWishToUse
+YourKeySetName ContextYouWishToUse
 ```
 
 So if you had a keyset for Blender & wanted to see shortcuts relevant to a context named 'Sculpting' you would write like so:  
 ```
-BlenderKeyset.xml
-Sculpting
+BlenderKeyset.xml Sculpting
 ```
 
 ### Done!
