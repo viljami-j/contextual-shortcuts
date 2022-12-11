@@ -19,8 +19,8 @@ e.g. the user clicks some window that has it's own special shortcuts.
 ```xml
 <Keyset>
    <!-- Keys in a keybind are separated by whitespaces. Refer to key-examples.txt for appropriate key names. -->
-    <Shortcut context="someCoolShortcutInYourProgram" keybind="CTRL ALT D"/> 
-    <Shortcut context="anotherCoolShortcut" keybind="CTRL F"/>
+    <Shortcut context="someContext" shortcut="someCoolShortcutInYourProgram" keybind="CTRL ALT D"/> 
+    <Shortcut context="anotherContext" shortcut="anotherCoolShortcut" keybind="CTRL F"/>
 </Keyset>
 ```
 
