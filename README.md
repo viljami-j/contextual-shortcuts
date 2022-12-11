@@ -25,7 +25,7 @@ e.g. the user clicks some window that has it's own special shortcuts.
 ```
 
 ###  Change the context
-Write to 'cshorts.txt' from any point in your code in the following format:  
+Write to 'cs.txt' from any point in your code in the following format:  
 ```
 YourKeySetName ContextYouWishToUse
 ```
