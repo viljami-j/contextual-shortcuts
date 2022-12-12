@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Keyset",
 "language": "GDScript",
-"path": "res://ContextualShortcuts.gd"
+"path": "res://CS.gd"
 }, {
 "base": "Node",
 "class": "Shortcut",
@@ -37,7 +37,7 @@ run/main_scene="res://MainScene.tscn"
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0.2, 0.231373, 0.309804, 1 )
-config/icon="res://ComputerKeys/Any_key_T.png"
+config/icon="res://US_ComputerKeys/Any_key_T.png"
 
 [display]
 

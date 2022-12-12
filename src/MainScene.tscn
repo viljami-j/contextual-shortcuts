@@ -1,9 +1,10 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://ComputerKeys/computer_key_Ctrl_T.png" type="Texture" id=1]
-[ext_resource path="res://ComputerKeys/Numpad/computer_key_Del_T.png" type="Texture" id=2]
-[ext_resource path="res://ComputerKeys/computer_key_Alt_T.png" type="Texture" id=3]
+[ext_resource path="res://US_ComputerKeys/CTRL.png" type="Texture" id=1]
+[ext_resource path="res://US_ComputerKeys/DEL.png" type="Texture" id=2]
+[ext_resource path="res://US_ComputerKeys/ALT.png" type="Texture" id=3]
 [ext_resource path="res://CaviarDreams.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://GridContainer.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=2]
 use_filter = true
@@ -11,82 +12,6 @@ font_data = ExtResource( 4 )
 
 [sub_resource type="Theme" id=3]
 default_font = SubResource( 2 )
-
-[sub_resource type="GDScript" id=1]
-script/source = "extends GridContainer
-
-var ks = Keyset.new()
-var shortcuts = ks.get_shortcuts()
-
-const hookdir: String = \"res://hook/\"
-const targetfile: String = \"cshorts.txt\"
-#var smallening_factor = 0.2#0.3
-#TODO: get default sizes from the preview nodes
-func setupWatcher():
-	var watcher = DirectoryWatcher.new()
-	watcher.scan_delay = 0.5 #seconds
-	add_child(watcher)
-	watcher.add_scan_directory(hookdir)
-	watcher.connect(\"files_created\", self, \"on_files_created\")
-	watcher.connect(\"files_modified\", self, \"on_files_modified\")
-	#watcher.connect(\"files_deleted\", self, \"on_files_deleted\")
-	pass
-
-func on_files_created(e):
-	if targetfile in e[0]:
-		var file = File.new()
-		file.open(hookdir + targetfile, File.READ)
-		var content = file.get_as_text()
-		print(content)
-		file.close()
-	
-func on_files_modified(e):
-	if targetfile in e[0]:
-		var file = File.new()
-		file.open(hookdir + targetfile, File.READ)
-		var content = file.get_as_text()
-		print(\"cshorts.txt: \" + content)
-		file.close()
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	setupWatcher()
-	self.add_constant_override(\"vseparation\", 40)
-	self.add_constant_override(\"hseparation\", 40)
-	
-	for shortcut in shortcuts:
-		create_gui_shortcut(shortcut)
-	#self.get_parent().rect_scale = Vector2(1 - shortcuts.size() * smallening_factor, 1 - shortcuts.size() * smallening_factor)
-
-func create_gui_shortcut(shortcut: Shortcut):
-	var keys = ks.parse_keybind(shortcut.shortcutKeybind)
-	var vbc = VBoxContainer.new()
-	var lbl = Label.new()
-	var hbc = HBoxContainer.new()
-	
-	lbl.text = shortcut.shortcutName
-	vbc.add_child(lbl)
-	vbc.add_constant_override(\"separation\", 10)
-	vbc.add_child(hbc)
-	
-	for key in keys:
-		var txr = TextureRect.new()
-		txr.expand = true
-		txr.rect_min_size = Vector2(50,50)
-		
-		# TODO: Add rest of the keys
-		if key == \"CTRL\":
-			txr.texture = load(\"res://ComputerKeys/computer_key_Ctrl_T.png\")
-		if key == \"F\":
-			txr.texture = load(\"res://ComputerKeys/Alphabet/computer_key_F_T.png\")
-		if key == \"D\":
-			txr.texture = load(\"res://ComputerKeys/Alphabet/computer_key_D_T.png\")
-		if key == \"ALT\":
-			txr.texture = load(\"res://ComputerKeys/computer_key_Alt_T.png\")
-		hbc.add_child(txr)
-	
-	add_child(vbc, true)
-"
 
 [node name="Control" type="Control"]
 anchor_left = 0.5
@@ -124,14 +49,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="GridContainer" type="GridContainer" parent="CenterContainer"]
-margin_left = 27.0
-margin_top = 150.0
-margin_right = 185.0
-margin_bottom = 224.0
+margin_left = 106.0
+margin_top = 187.0
+margin_right = 106.0
+margin_bottom = 187.0
 columns = 5
-script = SubResource( 1 )
+script = ExtResource( 5 )
 
 [node name="Preview_VBC" type="VBoxContainer" parent="CenterContainer/GridContainer"]
+visible = false
 margin_right = 158.0
 margin_bottom = 74.0
 
