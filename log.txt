@@ -1,0 +1,24 @@
+2022-12-10_18:27:40.9481344
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.cpp(26:16) 
+Keyset: testaus
+
+2022-12-10_18:28:01.6290497
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.cpp(26:16) 
+Keyset: testaus
+
+2022-12-10_18:32:25.9081733
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.cpp(22:20) 
+Keyset: XML_ERROR_FILE_NOT_FOUND
+
+2022-12-10_18:34:08.9448771
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.cpp(22:20) 
+Keyset: XML_ERROR_FILE_NOT_FOUND
+
+2022-12-10_18:34:32.9029201
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.cpp(22:20) 
+Keyset: XML_ERROR_FILE_NOT_FOUND
+
+2022-12-10_19:56:09.1124315
+File: C:\Users\decvic\Desktop\contextual-shortcuts\src\Keyset.h(85:20) 
+LoadKeyset: XML_ERROR_FILE_NOT_FOUND
+
