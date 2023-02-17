@@ -6,7 +6,7 @@ A simple tool that provides contextual shortcuts for any application that has de
 * Setting a context has never been easier - just write a single line to a text file from any point in your code!
 * Sets a low bar to implement contextual shortcuts that can really make a difference in productivity.
 
-## What is a context?
+### What is a context?
 * TODO: Add a demonstrative .gif
 
 ## How to use?
