@@ -2,7 +2,8 @@
 A simple tool that provides contextual shortcuts for any application that has defined a keyset.
 
 ## Why to use?
-* Context has never been easier - just write a single line to a text file from any point in your code!
+* Provides an easy way to learn shortcuts, should be essential to any application that works with multiple contexts e.g. Blender, Unreal Engine, Godot.
+* Setting a context has never been easier - just write a single line to a text file from any point in your code!
 * Sets a low bar to implement contextual shortcuts that can really make a difference in productivity.
 
 ## How to use?
