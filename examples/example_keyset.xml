@@ -1,0 +1,5 @@
+<Keyset>
+   <!-- Keys in a keybind are separated by whitespaces. Refer to key-examples.txt for appropriate key names. -->
+    <Shortcut context="someContext" shortcut="someCoolShortcutInYourProgram" keybind="CTRL ALT D"/> 
+    <Shortcut context="anotherContext" shortcut="anotherCoolShortcut" keybind="CTRL F"/>
+</Keyset>

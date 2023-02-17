@@ -1,0 +1,65 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "DirectoryWatcher",
+"language": "GDScript",
+"path": "res://DirectoryWatcher.gd"
+}, {
+"base": "Node",
+"class": "Keyset",
+"language": "GDScript",
+"path": "res://CS.gd"
+}, {
+"base": "Node",
+"class": "Shortcut",
+"language": "GDScript",
+"path": "res://Shortcut.gd"
+} ]
+_global_script_class_icons={
+"DirectoryWatcher": "",
+"Keyset": "",
+"Shortcut": ""
+}
+
+[application]
+
+config/name="contextual-shortcuts"
+run/main_scene="res://MainScene.tscn"
+boot_splash/show_image=false
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.2, 0.231373, 0.309804, 1 )
+config/icon="res://US_ComputerKeys/Any_key_T.png"
+
+[display]
+
+window/size/width=1200
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"flags/filter": false
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0.2, 0.231373, 0.309804, 1 )
+environment/default_environment="res://default_env.tres"
