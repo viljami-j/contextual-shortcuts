@@ -10,7 +10,7 @@ A simple tool that provides contextual shortcuts for any application that has de
 ### Define a keyset
 *What is a keyset*?
 
-It is a file that contains all of your application's contexts, actions & keybinds for each defined action.
+It is a file that contains all of your application's contexts, actions & keybinds defined for each action.
 
 *What is a context*?
 
