@@ -1,5 +1,5 @@
 # Contextual Shortcuts
-A simple tool that provides contextual shortcuts for any application that has defined [a keyset](https://github.com/viljami-j/contextual-shortcuts#define-a-keyset).
+A simple tool that provides contextual shortcuts for any application that has defined [a keyset](#define-a-keyset).
 
 Extremely easy to implement!
 
