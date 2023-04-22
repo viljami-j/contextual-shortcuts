@@ -1,16 +1,18 @@
 # Contextual Shortcuts
-A simple tool that provides contextual shortcuts for any application that has defined a keyset.
+A simple tool that provides contextual shortcuts for any application that has defined [a keyset](https://github.com/viljami-j/contextual-shortcuts#define-a-keyset).
+
+Extremely easy to implement!
 
 ## Why to use?
-* Provides an easy way to learn shortcuts, should be essential to any application that works with multiple contexts e.g. Blender, Unreal Engine, Godot.
-* Setting a context has never been easier - just write a single line to a text file from any point in your code!
-* Sets a low bar to implement contextual shortcuts that can really make a difference in productivity.
+* Provides an easy way to learn shortcuts, should be relevant to any application that works with multiple contexts e.g. Blender, Unreal Engine, Godot.
+* Spare the cognitive load of searching (interruption, open web browser, think of query, parse findings).
+* Allows people to start using shortcuts right away, instead of when they bother to look them up.
 
 ## How to use?
 ### Define a keyset
 *What is a keyset*?
 
-It is a file that contains all of your application's contexts, actions & keybinds defined for each action.
+It is a file that contains all of your application's contexts, related actions & keybinds defined for each action.
 
 *What is a context*?
 
