@@ -1,7 +1,7 @@
 # Contextual Shortcuts
 A simple tool that provides contextual shortcuts for any application that has defined [a keyset](#define-a-keyset).
 
-Extremely easy to implement!
+Extremely easy to [implement](#define-a-keyset)!
 
 ## Why to use?
 * Provides an easy way to learn shortcuts, should be relevant to any application that works with multiple contexts e.g. Blender, Unreal Engine, Godot.
